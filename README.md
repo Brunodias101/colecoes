@@ -1,6 +1,6 @@
-# Java Collections: Set, List, ArrayList, HashSet, SortedSet e TreeSet
+# Java Collections: Set, List, ArrayList, HashSet, SortedSet, TreeSet e Queue
 
-Este documento apresenta um resumo detalhado sobre **Set** e **List**, abordando suas principais implementações no Java: **HashSet**, **TreeSet** e **ArrayList**. Ele serve como guia para entender suas características e escolher a implementação mais adequada para cada caso.
+Este documento apresenta um resumo detalhado sobre **Set**, **List**, **Queue** e suas principais implementações no Java: **HashSet**, **TreeSet**, **ArrayList** e **LinkedList** (como fila). Ele serve como guia para entender suas características e escolher a implementação mais adequada para cada caso.
 
 ---
 
@@ -84,10 +84,23 @@ Este documento apresenta um resumo detalhado sobre **Set** e **List**, abordando
 
 ---
 
-### **Quando usar ArrayList?**
-- Quando precisar de uma coleção redimensionável.
-- Quando a ordem dos elementos importa.
-- Para cenários com leituras frequentes e poucas alterações na lista.
+## **4. Queue**
+### Conceitos Principais
+1. **Fila (Queue)**:
+  - Estrutura de dados **FIFO** (*First In, First Out*), onde o primeiro elemento inserido é o primeiro a ser removido.
+  - A implementação **LinkedList** é utilizada para criar a fila.
+
+2. **Adição de Elementos**:
+  - `add(E e)`: Adiciona um elemento à fila. Lança uma exceção (`IllegalStateException`) se a fila estiver cheia.
+  - `offer(E e)`: Também adiciona um elemento, mas retorna `false` se a fila estiver cheia, sem lançar exceção.
+
+3. **Consulta de Elementos**:
+  - `peek()`: Retorna o elemento na frente da fila sem removê-lo. Retorna `null` se a fila estiver vazia.
+  - `element()`: Semelhante ao `peek()`, mas lança uma exceção (`NoSuchElementException`) se a fila estiver vazia.
+
+4. **Remoção de Elementos**:
+  - `poll()`: Remove e retorna o elemento na frente da fila. Retorna `null` se a fila estiver vazia.
+  - `remove()`: Remove e retorna o elemento na frente da fila. Lança uma exceção (`NoSuchElementException`) se a fila estiver vazia.
 
 ---
 
@@ -95,5 +108,4 @@ Este documento apresenta um resumo detalhado sobre **Set** e **List**, abordando
 - Use **HashSet** para conjuntos únicos onde a ordem não importa e o desempenho é essencial.
 - Use **TreeSet** para conjuntos únicos que devem ser ordenados.
 - Use **ArrayList** para listas redimensionáveis com acesso rápido por índice e ordem mantida.
-
-Este guia deve ajudar a escolher a implementação correta para suas necessidades de coleções no Java.
+- Use **Queue** para implementar filas baseadas na lógica FIFO, aproveitando métodos como `poll` e `offer` para gerenciar elementos de forma segura.
