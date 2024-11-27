@@ -103,9 +103,21 @@ Este documento apresenta um resumo detalhado sobre **Set**, **List**, **Queue** 
   - `remove()`: Remove e retorna o elemento na frente da fila. Lança uma exceção (`NoSuchElementException`) se a fila estiver vazia.
 
 ---
+## **5. Stack**
+### Visão Geral
+A **Pilha (Stack)** é uma estrutura de dados **LIFO** (*Last In, First Out*), onde o último elemento adicionado é o primeiro a ser removido. Em Java, a classe `Stack` é a implementação mais comum.
+
+### **Métodos Comuns**
+1. `push(E e)`: Adiciona um elemento ao topo da pilha.
+2. `pop()`: Remove e retorna o elemento no topo da pilha. Lança exceção se a pilha estiver vazia.
+3. `peek()`: Retorna o elemento no topo da pilha sem removê-lo.
+4. `empty()`: Verifica se a pilha está vazia.
+5. `search(Object o)`: Retorna a posição de um elemento na pilha (topo = posição 1).
+
 
 ## **Conclusão**
 - Use **HashSet** para conjuntos únicos onde a ordem não importa e o desempenho é essencial.
 - Use **TreeSet** para conjuntos únicos que devem ser ordenados.
 - Use **ArrayList** para listas redimensionáveis com acesso rápido por índice e ordem mantida.
 - Use **Queue** para implementar filas baseadas na lógica FIFO, aproveitando métodos como `poll` e `offer` para gerenciar elementos de forma segura.
+- Use **Stack** para cenários onde o último elemento inserido deve ser o primeiro a ser removido (**LIFO**), como histórico de navegação ou algoritmos de retrocesso (*backtracking*).
