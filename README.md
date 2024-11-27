@@ -114,6 +114,24 @@ A **Pilha (Stack)** é uma estrutura de dados **LIFO** (*Last In, First Out*), o
 4. `empty()`: Verifica se a pilha está vazia.
 5. `search(Object o)`: Retorna a posição de um elemento na pilha (topo = posição 1).
 
+---
+## **6. Map**
+### Visão Geral
+O **Map** associa **chaves** a **valores**, funcionando como uma estrutura de dados de pares (chave-valor). Cada chave é única, mas os valores podem se repetir.
+
+### **Principais Implementações**
+1. **HashMap**: Baseado em tabela hash, não garante ordem.
+2. **LinkedHashMap**: Mantém a ordem de inserção das chaves.
+3. **TreeMap**: Baseado em árvore binária, mantém as chaves ordenadas.
+
+### **Métodos Comuns**
+- `put(K key, V value)`: Adiciona ou atualiza um par chave-valor.
+- `get(Object key)`: Retorna o valor associado à chave.
+- `remove(Object key)`: Remove um par chave-valor.
+- `keySet()`: Retorna todas as chaves.
+- `values()`: Retorna todos os valores.
+- `entrySet()`: Retorna pares chave-valor.
+---
 
 ## **Conclusão**
 - Use **HashSet** para conjuntos únicos onde a ordem não importa e o desempenho é essencial.
@@ -121,3 +139,4 @@ A **Pilha (Stack)** é uma estrutura de dados **LIFO** (*Last In, First Out*), o
 - Use **ArrayList** para listas redimensionáveis com acesso rápido por índice e ordem mantida.
 - Use **Queue** para implementar filas baseadas na lógica FIFO, aproveitando métodos como `poll` e `offer` para gerenciar elementos de forma segura.
 - Use **Stack** para cenários onde o último elemento inserido deve ser o primeiro a ser removido (**LIFO**), como histórico de navegação ou algoritmos de retrocesso (*backtracking*).
+- Use **Map** para armazenar pares chave-valor, escolhendo **HashMap** para alto desempenho, **LinkedHashMap** para manter a ordem de inserção ou **TreeMap** para chaves ordenadas.
