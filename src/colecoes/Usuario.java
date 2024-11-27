@@ -21,8 +21,8 @@ public class Usuario {
         return Objects.equals(nome, usuario.nome);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(nome);
-    }
+//    @Override
+//    public int hashCode() {
+//        return Objects.hashCode(nome);
+//    }
 }
