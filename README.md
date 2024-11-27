@@ -1,6 +1,7 @@
 # Java Collections: Set, List, ArrayList, HashSet, SortedSet, TreeSet e Queue
 
-Este documento apresenta um resumo detalhado sobre **Set**, **List**, **Queue** e suas principais implementações no Java: **HashSet**, **TreeSet**, **ArrayList** e **LinkedList** (como fila). Ele serve como guia para entender suas características e escolher a implementação mais adequada para cada caso.
+Este documento apresenta um resumo detalhado sobre as principais coleções do Java, incluindo **Set**, **List**, **Queue**, **Stack** e **Map**, com destaque para suas implementações mais comuns, como **HashSet**, **TreeSet**, **ArrayList**, **LinkedList**, **HashMap** e **TreeMap**. Ele serve como um guia prático para entender suas características e escolher a melhor estrutura de dados para cada cenário de desenvolvimento.
+
 
 ---
 
